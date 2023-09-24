@@ -1,1 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --background-color: #000;
+  --themes-background: 
+    repeating-linear-gradient(to right, #000 0%, transparent 100%),
+    repeating-linear-gradient(to bottom, #007f0c 0%, #004306 100%);
+  --main-font: Inter-Variable, sans-serif;
+  --accent-font: PressStart2P-Regular, sans-serif;
+  --text-font-weight: 465;
+  --title-font-weight: 785;
+  --themes-main-color: #00CC14;
+  --card-size: max(371px, 68.5ch)
+}
