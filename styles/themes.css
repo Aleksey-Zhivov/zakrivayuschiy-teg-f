@@ -7,23 +7,23 @@
 :root.theme-light {
   --background-color: #FFF;
   --themes-background: 
-    repeating-linear-gradient(to right, #d3d3d3 0.01%, transparent 100%),
-    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0 2px, #1a1a1a 2px 4px);
   --themes-main-color: #000;
   --text-font-weight: 400;
   --title-font-weight: 700;
-  --card-size: max(371px, 70ch)
+  --card-size: max(371px, 70ch);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #000;
     --themes-background: 
-    repeating-linear-gradient(to right, #000 0%, transparent 100%),
-    repeating-linear-gradient(to bottom, #007f0c 0%, #004306 100%);
+      repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
     --themes-main-color: #00CC14;
     --text-font-weight: 465;
     --title-font-weight: 785;
-    --card-size: max(371px, 68.5ch)
+    --card-size: max(371px, 68.5ch);
   }
 }
