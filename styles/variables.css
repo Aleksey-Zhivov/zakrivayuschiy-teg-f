@@ -10,5 +10,10 @@
   --text-font-weight: 465;
   --title-font-weight: 785;
   --themes-main-color: #00CC14;
+  --heart-filling: transparent;
+  --heart-filling-core: transparent;
+  --heart-polish: transparent;
+  --button-bg-color: #000;
+  --button-elements-color: #00CC14;
   --card-size: max(371px, 68.5ch);
 }
