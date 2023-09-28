@@ -19,7 +19,7 @@
   --card-size: max(371px, 70ch);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background-color: #000;
     --themes-background: 
