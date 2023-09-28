@@ -4,6 +4,7 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
 :root.theme-light {
   --background-color: #FFF;
   --themes-background: 
@@ -19,19 +20,19 @@
   --card-size: max(371px, 70ch);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: #000;
+@media (prefers-color-scheme: dark) {
+  :root.theme-light {
+    --background-color: #FFF;
     --themes-background: 
-      repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
-      repeating-linear-gradient(to bottom, 000 0 2px, #transparent 2px 4px),
-      repeating-linear-gradient(to bottom, #007f0c 0%, #007f0c 100%);
-    --themes-main-color: #00CC14;
-    --button-bg-color: #00CC14;
-    --button-text-color: #000;
-    --button-border-color: #00CC14;
-    --text-font-weight: 465;
-    --title-font-weight: 785;
-    --card-size: max(371px, 68.5ch);
+      repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%);
+    --themes-main-color: #000;
+    --button-bg-color: #FFF;
+    --button-text-color: #FFF;
+    --button-border-color: #000;
+    --text-font-weight: 400;
+    --title-font-weight: 700;
+    --card-size: max(371px, 70ch);
   }
 }
