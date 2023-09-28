@@ -12,7 +12,8 @@
     repeating-linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%);
   --themes-main-color: #000;
   --button-bg-color: #FFF;
-  --button-elements-color: #000;
+  --button-text-color: #FFF;
+  --button-border-color: #000;
   --text-font-weight: 400;
   --title-font-weight: 700;
   --card-size: max(371px, 70ch);
@@ -27,7 +28,8 @@
       repeating-linear-gradient(to bottom, #007f0c 0%, #007f0c 100%);
     --themes-main-color: #00CC14;
     --button-bg-color: #00CC14;
-    --button-elements-color: #000;
+    --button-text-color: #000;
+    --button-border-color: #00CC14;
     --text-font-weight: 465;
     --title-font-weight: 785;
     --card-size: max(371px, 68.5ch);
