@@ -34,10 +34,10 @@
   margin-inline: auto;
   margin-block: 102px 100px;
   border: 2px solid var(--themes-main-color);
+  color: var(--themes-main-color);
   text-transform: uppercase;
   background-color: var(--background-color);
   min-block-size: 368px;
-  color: var(--themes-main-color);
 }
 
 .header__title {
@@ -154,8 +154,8 @@
   justify-content: center;
   border-block-end: 2px solid var(--themes-main-color);
   padding: 5px 10px;
-  font-size: 18px;
   color: var(--themes-main-color);
+  font-size: 18px;
 }
 
 .card:nth-child(1) > .card__title::before,
@@ -275,10 +275,10 @@
 .card__text {
   padding-inline: 21px;
   padding-block: 25px;
+  color: var(--themes-main-color);
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
   line-height: 1.16;
-  color: var(--themes-main-color);
 }
 
 .card__text:first-of-type {
@@ -328,16 +328,16 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 8px;
   margin-inline: auto 20px;
   margin-block-end: 25px;
-  gap: 8px;
 }
 
 .card__icon-button {
   display: flex;
   border: transparent;
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
 }
 
 .card__icon-button:focus {
@@ -450,13 +450,25 @@
 
 .button__decoration {
   position: relative;
+  z-index: 1;
   padding-block: 11px;
+  color: var(--button-bg-color);
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 0.9;
-  z-index: 1;
-  color: var(--button-bg-color);
   mix-blend-mode: difference;
+}
+
+.card__like-button:focus {
+  box-shadow: 2px 2px 0px 0px var(--button-bg-color);
+  outline: none;
+  transition: 0.2s;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--button-bg-color);
+  outline: none;
+  transition: 0.2s;
 }
 
 .card__like-button::before {
@@ -464,9 +476,9 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-  translate: -100%;
+  background-color: var(--button-bg-color);
   transition: all 0.5s ease-in-out;
-  background-color: var(--button-bg-color); 
+  translate: -100%; 
 }
 
 .card__like-button:hover::before {
@@ -482,23 +494,48 @@
 
 .footer__save-button {
   position: relative;
-  z-index: 0;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   width: 339px;
   height: 55px;
-  border: 2px solid var(--themes-main-color);
-  padding: 15px 18px;
+  border: 2px solid var(--button-bg-color);
   overflow: hidden;
-  background-color: var(--button-bg-color);
+  background-color: var(--button-elements-color); 
+  mix-blend-mode: difference;
 }
 
 .footer__save-button_icon {
   display: flex;
   width: 24px;
   height: 24px;
+}
+
+.footer__save-button:focus {
+  box-shadow: 2px 2px 0px 0px var(--button-bg-color);
+  outline: none;
+  transition: 0.2s;
+}
+
+.footer__save-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--button-bg-color);
+  outline: none;
+  transition: 0.2s;
+}
+
+.footer__save-button::before {
+  content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  background-color: var(--button-bg-color);
+  transition: all 0.5s ease-in-out;
+  translate: -100%;
+}
+
+.footer__save-button:hover::before {
+  translate: 0%;
 }
 
 .footer__popup {
@@ -538,78 +575,51 @@
 
 .popup__card-icon {
   display: flex;
-  grid-area: "floppy";
   width: 39px;
   height: 39px;
-}
-
-.poppopup__card-text {
-  grid-area: "text";
+  mix-blend-mode: difference;
 }
 
 .footer__popup-button {
   position: relative;
   display: flex;
-  grid-area: "button";
   justify-content: center;
   align-items: center;
-  gap: 10px;
   width: 293px;
   height: 38px;
-  border: 2px solid var(--themes-main-color);
-  padding: 9px 17px;
+  border: 2px solid var(--button-bg-color);
   overflow: hidden;
   text-transform: uppercase;
-  background-color: var(--button-bg-color);
+  background-color: var(--button-elements-color); 
+  mix-blend-mode: difference;
 }
 
-.card__like-button:focus,
-.footer__save-button:focus,
 .footer__popup-button:focus {
-  box-shadow: 2px 2px 0px 0px var(--themes-main-color);
+  box-shadow: 2px 2px 0px 0px var(--button-bg-color);
   outline: none;
   transition: 0.2s;
 }
 
-.card__like-button:focus-visible,
-.footer__save-button:focus-visible,
 .footer__popup-button:focus-visible {
-  box-shadow: 2px 2px 0px 0px var(--themes-main-color);
+  box-shadow: 2px 2px 0px 0px var(--button-bg-color);
   outline: none;
+  transition: 0.2s;
 }
 
-/*
-
-.footer__save-button::before,
 .footer__popup-button::before {
-  content:'';
+  content: "";
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
+	width: 100%;
 	height: 100%;
-	background: var(--button-elements-color);
-	transition: all 0.5s ease-in-out;
-  mix-blend-mode: difference;
+  background-color: var(--button-bg-color);
+  transition: all 0.5s ease-in-out;
+  translate: -100%;
 }
 
-.footer__save-button:hover > .button__decoration,
-.footer__popup-button:hover > .button__decoration {
-  color: var(--button-bg-color);
-	transition: color 0.5s ease-in-out;
-}
-
-.footer__save-button:not(:hover) > .button__decoration,
-.footer__popup-button:not(:hover) > .button__decoration {
-  color: var(--themes-main-color);
-	transition: color 0.5s ease-in-out;
-}
-
-.footer__save-button:hover::before,
 .footer__popup-button:hover::before {
-  width: 100%;
+  translate: 0%;
 }
-*/
+
 @media (width <=465px) {
   .header {
     max-block-size: 327px;
