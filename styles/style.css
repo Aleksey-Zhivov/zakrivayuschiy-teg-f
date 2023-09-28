@@ -580,7 +580,6 @@
 
 /*
 
-.card__like-button::before,
 .footer__save-button::before,
 .footer__popup-button::before {
   content:'';
@@ -594,21 +593,18 @@
   mix-blend-mode: difference;
 }
 
-.card__like-button:hover > .button__decoration,
 .footer__save-button:hover > .button__decoration,
 .footer__popup-button:hover > .button__decoration {
   color: var(--button-bg-color);
 	transition: color 0.5s ease-in-out;
 }
 
-.card__like-button:not(:hover) > .button__decoration,
 .footer__save-button:not(:hover) > .button__decoration,
 .footer__popup-button:not(:hover) > .button__decoration {
   color: var(--themes-main-color);
 	transition: color 0.5s ease-in-out;
 }
 
-.card__like-button:hover::before,
 .footer__save-button:hover::before,
 .footer__popup-button:hover::before {
   width: 100%;
