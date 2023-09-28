@@ -273,7 +273,7 @@
 }
 
 .card__text {
-  padding-inline: 21px;
+  padding-inline: 27px;
   padding-block: 25px;
   color: var(--themes-main-color);
   font-family: var(--main-font), sans-serif;
@@ -329,7 +329,7 @@
   flex-direction: row;
   justify-content: flex-end;
   gap: 8px;
-  margin-inline: auto 20px;
+  margin-inline-end: 25px;
   margin-block-end: 25px;
 }
 
@@ -494,11 +494,12 @@
 .footer__save-button {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 339px;
-  height: 55px;
+  width: 335px;
+  height: 51px;
   border: 2px solid var(--button-border-color);
   overflow: hidden;
   background-color: var(--button-bg-color); 
@@ -621,12 +622,25 @@
 
 @media (width <=465px) {
   .header {
-    max-block-size: 327px;
+    min-block-size: 323px;
   }
 
   .card:nth-child(odd) > .card__title::before,
   .card:nth-child(even) > .card__title::before {
     top: 78px;
     right: 10px;
+  }
+
+  .footer__save-button {
+    align-content: flex-end;
+    gap: 0;
+    width: 310px;
+    height: 84px;
+
+  }
+  
+  .footer__save-button_icon {
+    width: 30px;
+    height: 30px;
   }
 }
