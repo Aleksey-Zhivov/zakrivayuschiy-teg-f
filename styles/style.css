@@ -111,7 +111,7 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  cursor: default;
+  pointer-events: none;
 }
 
 .theme-menu__button:focus {
@@ -133,7 +133,7 @@
 }
 
 .theme-menu__button:focus::after {
-  transition: width 0.2s;
+  transition: width 0.3s ease;
 }
 
 .theme-menu__button:focus-visible:after {
@@ -143,6 +143,7 @@
 
 .theme-menu__button:hover {
   opacity: 0.6;
+  transition: 0.3s ease;
 }
 
 .card {
