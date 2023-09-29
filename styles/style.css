@@ -364,7 +364,7 @@
 
 .card__like-button:focus-visible,
 .footer__save-button:focus-visible,
-.footer__popup-button:focus-visible  {
+.footer__popup-button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--button-border-color);
   outline: none;
   transition: 0.2s;
@@ -374,7 +374,7 @@
 .footer__save-button::before,
 .footer__popup-button::before {
   content: "";
-	position: absolute; 
+	position: absolute;
   z-index: 1;
 	width: 100%;
 	height: 100%;
