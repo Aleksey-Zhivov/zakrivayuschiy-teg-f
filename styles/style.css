@@ -49,16 +49,13 @@
 .header__logo {
   margin-block-start: 110px;
   text-decoration: none;
+  font-family: var(--accent-font);
+  font-size: clamp(3.0625rem, 2.7088rem + 1.5052vw, 4.0625rem);
 }
 
 .header__logo:focus,
 .header__logo:focus-visible {
   outline: transparent;
-}
-
-.header__logo-title {
-  font-family: var(--accent-font);
-  font-size: clamp(3.0625rem, 2.7088rem + 1.5052vw, 4.0625rem);
 }
 
 .header__description {
@@ -168,7 +165,7 @@
   font-size: 18px;
 }
 
-.card__inamge-wrapper {
+.card__image-wrapper {
   position: relative;
 }
 
@@ -346,7 +343,9 @@
   background-color: var(--button-bg-color);
 }
 
-.button__decoration {
+.card__like-button_decoration,
+.footer__save-button_decoration,
+.footer__popup-button_decoration {
   position: relative;
   z-index: 2;
   padding-block: 11px;
